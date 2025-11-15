@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GioTech Interview Bot</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="chat-wrapper">
+            <div class="chat-window">
+                <div class="chat-header">
+                    <h1 class="giotech-title">
+                        <span class="giotech-badge">GioTech</span>
+                        <span class="giotech-product">Interview Bot</span>
+                    </h1>
+
+                    <div class="header-right">
+                        <div class="status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">online</span>
+                        </div>
+                        <div class="profile-tag">
+                            <span class="avatar-circle small">🤖</span>
+                            <span class="profile-name">GioTech Bot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top quick buttons + links -->
+                <div class="top-bar">
+                    <div class="quick-actions">
+                        <button class="chip" data-mode="behavioral">
+                            Behavioral Mock
+                        </button>
+                        <button class="chip" data-mode="tech">
+                            Tech / Help Desk
+                        </button>
+                        <button class="chip" data-mode="customer">
+                            Customer Service
+                        </button>
+                        <button class="chip" data-mode="retail">
+                            Retail / Store
+                        </button>
+                        <button class="chip" data-mode="reset">
+                            Exit Mock Mode
+                        </button>
+                    </div>
+                    <div class="top-links">
+                        <a href="https://github.com/giomedina87" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/giovani-medina" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message bot">
+                        <div class="meta">
+                            <span class="avatar-circle">🤖</span>
+                            <span class="name">GioTech Bot</span>
+                        </div>
+                        <div class="bubble">
+                            Hi! I’m your interview practice helper. 👋<br><br>
+                            I can:<br>
+                            • Run a <b>mock interview</b> (behavioral, tech, customer service, retail).<br>
+                            • Help you improve answers using the <b>STAR method</b>.<br>
+                            • Give example answers for common questions like
+                            <i>“Tell me about yourself”</i> or
+                            <i>“Why should we hire you?”</i>.<br><br>
+                            Use the buttons above to start a mock interview, or just type a question like
+                            <i>“Help me with ‘Tell me about yourself’ for a help-desk job.”</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="typing-indicator" class="typing hidden">
+                    <span class="avatar-circle small">🤖</span>
+                    <span class="typing-text">GioTech Bot is typing</span>
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="input-shell">
+                        <input
+                            type="text"
+                            id="user-input"
+                            placeholder="Ask an interview question or answer as if you’re in a mock interview..."
+                            autocomplete="off"
+                        />
+                    </div>
+                    <button id="mic-btn" class="icon-btn" title="Speak your answer/question">
+                        🎤
+                    </button>
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            © 2025 GioTech Graphics · Interview Bot · Built with HTML · CSS · JavaScript
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
